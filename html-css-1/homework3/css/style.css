@@ -1,0 +1,161 @@
+@import "font.css";
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    background-image: url("../img/background@1X.png" )  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat',sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    display:inline-block;
+    margin-top: 30px;
+    margin-left: 10%;
+    font-family: 'Lato',sans-serif;
+
+}
+.header-contact{
+
+    display: inline-block;
+    float:right;
+}
+.logo-text:hover {
+    color: #f26522;
+}
+.darkmode{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.contact{
+    margin-right: 210px;
+    line-height: 1.5;
+    text-align: end;
+    font-size: 16px;
+    float: right;
+    padding-top: 54px;
+    color: white;
+    padding-bottom: 0;
+}
+.a{
+    text-decoration: none;
+
+}
+
+.text-milan{
+    text-decoration: none;
+    display: inline-block;
+}
+.text-holidays{
+    font-size: 91%;
+}
+.logo-text
+{
+
+    display: inline-block;
+    color: #ffffff;
+    font-size: 36px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+
+}
+.logo-image{
+    width: 93px;
+    height: 70px;
+}
+
+.images{
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.column-1{
+    width: 31%;
+    margin: 10px;
+}
+
+.images-1{
+    width:307px ;
+    height:280px;
+
+    position: relative;
+    color: white;
+
+
+}
+.img{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(
+            to bottom,
+            white,
+            rgba(0,0,0,0)
+    )1 10%;
+}
+
+.images-item-one{
+    width: 308px;
+    height: 200px;
+    background-repeat: no-repeat;
+}
+
+.images-text-one{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.view-details-hover{
+    display: none;
+    position: absolute;
+    top: 150px;
+    width: 310px;
+    height: 54px;
+
+
+}
+.images-1:hover .view-details-hover{
+    background-color: #f26522;
+    display: block;
+    color: white;
+
+}
+.images-1:hover .images-text-one{
+    color: #f26522 ;
+}
+.view-details,.content-price{
+    display: inline-block;
+
+}
+.content{
+    margin-top: 5px;
+    margin-left: 35px;
+}
+.content-price{
+    margin-left: 35px;
+}
+.view-details{
+    margin-left: 50px;
+}
+.view-details-img{
+    margin-left: 20px;
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    font-size: 12pt;
+    font-family: 'Lato', sans-serif;
+}

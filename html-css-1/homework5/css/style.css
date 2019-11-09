@@ -1,0 +1,109 @@
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    border:15px solid #3a4965;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+.first-row{
+    width: 330px;
+    background-color: #fafafa;
+    color: #484848;
+    font-size:20px;
+    line-height: 0.1;
+}
+.icons{
+    margin-top: 3px;
+    height: 18px;
+}
+
+.second-row{
+    width: 310px;
+}
+.header1{
+    background-color: #89c331;
+}
+.header2{
+    background-color: #f04a56;
+
+}
+.header3{
+    background-color: #20807c;
+}
+.header-1-2{
+    background-color: #fafafa;
+}
+.header-number{
+    color: #484848;
+    font-size: 56px;
+    margin-left: 25px;
+}
+.header-number-text{
+    margin-top: 10px;
+    font-size: 21px;
+    margin-right: 60px;
+    float: right;
+    text-align: start;
+    color: #484848;
+}
+.body-column-1{
+    background-color: #f2f2f2;
+    color: #737373;
+}
+.body-colspan4{
+    background-color: #e3e3e3;
+    color: #737373;
+}
+.footer-column-1{
+    background-color: #dddddd;
+
+}
+.footer-column-2{
+    background-color: #eeeeee;
+}
+td,th{
+    height: 70px;
+}
+.footer-contact-us{
+    box-shadow: 0  5px 1px 0 #404040;
+    color: white;
+    margin-left: 61px;
+    width: 120px;
+    padding: 10px 30px 6px 30px;
+    background-color: #484848;
+    border-radius: 4%;
+}
+
+.footer-buy-now{
+    box-shadow: 0  5px 1px 0 #79b027;
+    color: white;
+    width: 120px;
+    margin-left: 67px;
+    margin-right: 30px;
+    padding: 10px 25px 6px 25px;
+    background-color: #89c331;
+    border-radius: 4%;
+}
+.footer-buy-now-2{
+    box-shadow: 0  5px 1px 0 #df3a46;
+    color: white;
+    width: 120px;
+    margin-left: 67px;
+    margin-right: 30px;
+    padding: 10px 25px 6px 25px;
+    background-color: #f04a56;
+    border-radius: 4%;
+}
+.footer-buy-now-3{
+    box-shadow: 0  5px 1px 0 #16736f;
+    color: white;
+    width: 120px;
+    margin-left: 67px;
+    margin-right: 30px;
+    padding: 10px 25px 6px 25px;
+    background-color: #20807c;
+    border-radius: 4%;
+}
+

@@ -1,0 +1,208 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    background-image: url("../img/rana-sawalha-364253-unsplash@1X.png" )  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 130px;
+
+}
+.journey-header{
+    width: 1280px;
+    height: 60px;
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+}
+.journey-text{
+    display: inline-block;
+    color: white;
+    margin: 20px 40px;
+
+}
+.journey-header-sprites{
+    display: inline-block;
+    margin-left: 44%;
+}
+.journey-header-sprites-icons{
+    display: inline-block;
+
+}
+a{
+    text-decoration: none;
+    color: #2c4937;
+}
+.green-text{
+    color:#3cb878;
+}
+.journey-header-icon{
+    margin-left: 30px;
+}
+.journey-welcome-text{
+    color: white;
+    display: inline-block;
+    float: right;
+    margin-left: 60px;
+
+}
+
+.journey-text-div{
+    display: inline-block;
+    width: 10%;
+}
+
+.journey-main{
+    width: 34%;
+    height: 60%;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 410px;
+    border-radius: 5%;
+
+}
+
+.green-square{
+    width: 18px;
+    height: 18px;
+    background-color: #3cb878;
+    display: inline-block;
+    margin-top: 30px;
+}
+.journey-main-register{
+    display: inline-block;
+    margin-left: 8%;
+
+}
+.journey-main-signup-text{
+    display: inline-block;
+    color: #9b9b9b;
+}
+.journey-main-login-text{
+    display: inline-block;
+    margin-left: 188px;
+}
+.journey-main-form{
+    margin-top: 10px;
+    margin-left: 15%;
+    width: 70%;
+    height: 470px;
+}
+.journey-main-social{
+    position: relative;
+}
+
+.journey-main-social-facebook-img{
+    padding:15px 15px 10px 25px;
+    background-color: #305db8;
+    display: inline-block;
+    border-radius: 7%;
+
+}
+
+.image-facebook{
+    padding-right: 10px;
+    border-right:1px solid #2b54a5;
+
+}
+.journey-main-social-facebook-text{
+    color: white;
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: -26%;
+}
+.journey-main-social-google-img {
+    padding: 17px 16px 10px 25px;
+    background-color: #df4a32;
+    display: inline-block;
+    margin-left: 12%;
+    border-radius: 7%;
+    position: absolute;
+
+}
+
+.image-google{
+
+    padding-right: 10px;
+    border-right:1px solid #c8422d;
+
+}
+.journey-main-social-google-text{
+    color: white;
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: -26%;
+
+
+}
+.main-line-and-or{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 136%;
+    margin: 0 auto;
+}
+.grey-line{
+    width: 100px;
+    border: 1px solid #eaeaea;
+    display: inline-block;
+    margin: 0 auto;
+}
+.main-form-line-or-text{
+    margin-top:30px ;
+    margin-bottom: 10px;
+    padding-left:35px;
+    padding-right: 35px;
+    color: #cecece;
+    display: inline-block;
+
+}
+.form-boxes{
+    border: 1px solid #eaeaea;
+    border-radius: 6%;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 10px;
+    width: 92%;
+    height: 10%;
+
+}
+.full-form{
+    color: #9b9b9b;
+}
+.main-form-terms{
+    color: #434343;
+    margin-top: 9px;
+
+}
+.ch{
+    margin-top: 10px;
+    margin-right: 20px;float: left;
+}
+.main-form-submit-buttom{
+    background-color: #3cb878;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+    margin-top: 15px;
+    border-radius: 3%;
+}
+.main-form-submit-buttom-text{
+    color: #eaeaea;
+}
+.form-boxes:hover{
+    box-shadow:  0 10px 10px 0 #dbdbdb;
+}
+.journey-text:hover{
+    color: #3cb878;
+}
+.ch {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+}

@@ -1,0 +1,33 @@
+body {
+    overflow: hidden;
+}
+.container {
+    height: 1700px;
+    font-family: sans-serif;
+    background-color: black;
+    color: yellow;
+    perspective: 1700px;
+    transform-origin: top center;
+    transform: scale(1) rotateX(300deg);
+}
+.container-text {
+    animation: to-top 30s  ease-in 0s infinite;
+    margin: 0 300px;
+    font-size: 70px;
+    transform-origin: center center;
+}
+@keyframes to-top {
+    from {
+        transform: translateY(1180px) rotateX(30deg);
+
+    }
+    to {
+        transform: translateY(-1800px) rotateX(30deg);
+
+    }
+}
+.text{
+    display: block;
+    word-spacing: 20px;
+    line-height: 1.5;
+}
