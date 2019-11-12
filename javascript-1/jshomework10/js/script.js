@@ -54,8 +54,8 @@
     }
     function hiddenError(){
         if(!h){
-            let x=  document.querySelector("h5");
-            x.remove();
+            let hFive=  document.querySelector("h5");
+            hFive.remove();
         }
     }
     let error=document.querySelector(".btn");
