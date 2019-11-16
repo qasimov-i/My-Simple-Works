@@ -31,7 +31,7 @@ div.append(getList(listData));
 //
 //
 //
-// /***  I tried to solve the advanced level of task below, but i couldn`t it***/
+ /***  I tried to solve the advanced level of task below, but i couldn`t it***/
 //
 //
 // // else {

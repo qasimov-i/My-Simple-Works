@@ -6,7 +6,6 @@ let n =  document.querySelector(".n");
 let l =  document.querySelector(".l");
 let z =  document.querySelector(".z");
 
-document.addEventListener("keydown",keyEnter)
 
 document.addEventListener("keydown", function (event) {
     //  all.style.color="white";
@@ -59,7 +58,7 @@ document.addEventListener("keydown", function (event) {
         z.style.backgroundColor = "black";
         s.style.backgroundColor = "black";
     }else if (event.code === "KeyN") {
-        enter.style.backgroundColor = "white";
+        enter.style.backgroundColor = "black";
         o.style.backgroundColor = "black";
         e.style.backgroundColor = "black";
         n.style.backgroundColor = "blue";
