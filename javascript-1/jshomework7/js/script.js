@@ -14,12 +14,12 @@ let fragment = document.createElement('ul');
 function   getList(arr)// if I add rest array(...arr) as argument here , the code will be wrong
 {
     arr.map(function(x){
-        let li  = document.createElement('li');
-           li.innerHTML=x;
+        let li = document.createElement('li');
+        li.innerHTML =x;
         fragment.append(li);
-
     });
     return fragment;
+
 }
 let div=document.querySelector('div');//or I can create new "div"
 // :let div= document.createElement('div');
