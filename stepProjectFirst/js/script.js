@@ -1,7 +1,9 @@
 
 let activeTriangle = document.querySelector(".triangle-active");
 let optionTabsItem = document.getElementsByClassName(".option-tabs-item");
-
+optionTabsItem.click(function(target){
+    console.log("salam");
+});
 
 
 $('.slick-bigger').slick({

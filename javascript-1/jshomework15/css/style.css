@@ -1,0 +1,58 @@
+.container{
+    width: 1200px;
+    margin:0 auto;
+    height: 500px;
+}
+.menu{
+    background: darkgray;
+    height: 100px;
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    padding: 30px;
+}
+
+.dodger-blue{
+    color: #00b5e2;
+}
+
+.red{
+    color: #ef3340;
+}
+
+.green{
+    color:#509e2f;
+}
+
+.blue{
+    color: #005bbb;
+}
+
+.yellow{
+    color:	#ffd500;
+}
+
+.section-dodgerblue{
+    background:	#00b5e2;
+}
+
+.section-red{
+    background:#ef3340;
+}
+.section-green{
+    background: #509e2f;
+}
+.section-blue{
+    margin-top: 20px;
+    background: #005bbb;
+
+}
+.section-yellow{
+    background:	#ffd500;
+}
+

@@ -6,6 +6,10 @@
     width: 1160px;
     margin: 0 auto;
 }
+.big-content{
+    width: 1700px;
+    margin: 0 auto;
+}
 .header{
     background:url("../img/section-1(header).jpg");
     height: 750px;
@@ -203,6 +207,49 @@
 
 
 
+.options-tabs-information{
+    margin-top: 30px;
+}
+.options-tabs-information-item{
+    display: flex;
+    flex-direction: row;
+}
+.information-img{
+    width: 194px;
+    height: 140px;
+}
+.information-text{
+    margin-left:  20px;
+    color:#777777 ;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+
+.section-install-now{
+    background-image: url("../img/section-2.jpg");
+    background-position: center;
+}
+
+.install-now{
+    padding: 70px 0 120px 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.install-now-text{
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+.install-now-button{
+    margin-top:50px ;
+}
+
+
 
 
 
@@ -214,6 +261,7 @@
     width: 450px;
 }
 .slick-bigger-items{
+
     text-align: center;
     color:black ;
     font-size:20px;
