@@ -57,16 +57,12 @@ $("p").css({
     margin:"0 auto"
 });
 let $displayNone= function(){
-    $("p").css({
-        display:"none"
-    })
+    $("p").hide();
 };
 $tabFirst.click(function(event){
     $displayNone();
     $tabColor();
-    $textFirst.css({
-        display:"block"
-    })
+    $textFirst.show();
     $tabFirst.css({
         background: "#937341",
         color:"#23201D"
@@ -76,9 +72,7 @@ $tabSecond.click(function(event){
     $displayNone();
     $tabColor();
 
-    $textSecond.css({
-        display:"block"
-    })
+    $textSecond.show();
     $tabSecond.css({
         background: "#937341",
         color:"#23201D"
@@ -88,9 +82,7 @@ $tabThird.click(function(event){
     $displayNone();
     $tabColor();
 
-    $textThird.css({
-        display:"block"
-    })
+    $textThird.show();
     $tabThird.css({
         background: "#937341",
         color:"#23201D"
@@ -100,9 +92,7 @@ $tabFourth.click(function(event){
     $displayNone();
     $tabColor();
 
-    $textFourth.css({
-        display:"block"
-    })
+    $textFourth.show();
     $tabFourth.css({
         background: "#937341",
         color:"#23201D"
@@ -112,9 +102,7 @@ $tabFiveth.click(function(event){
     $displayNone();
     $tabColor();
 
-    $textFiveth.css({
-        display:"block"
-    })
+    $textFiveth.show();
     $tabFiveth.css({
         background: "#937341",
         color:"#23201D"

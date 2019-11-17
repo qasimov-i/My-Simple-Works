@@ -70,18 +70,14 @@ $buttonSectionAppear.css({
 let count =1;
 $buttonSectionAppear.click(function(){
     if(count===1) {
-        $('.section-green').css({
-            display: "none"
-        })
+        $('.section-green').hide();
         $buttonSectionAppear.text("Show");
     count=0;
     }
     else{
         $buttonSectionAppear.text("Hide");
 
-        $('.section-green').css({
-            display: "block"
-        });
+        $('.section-green').show();
         count=1;
     }
 });
