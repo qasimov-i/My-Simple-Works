@@ -76,6 +76,32 @@ $('.tab-word-press').click(function (event){
     })
     $('.our-amazing-work-images-item').hide();
     $('.item-press').show();
+    $('.our-amazing-work-images-item').mouseover(function (){
+        $('.more-info-img').hide();
+        if($('.our-amazing-work-images-item').hide()){
+            $('.item-press').show()
+        }
+
+        let $moreInfo = $("<div class ='more-info-img'></div>");
+        $(this).after($moreInfo);
+        $(this).hide();
+
+        let $circle1 = $("<div class ='circle-one'></div>");
+        let $circle2 = $("<div class ='circle-two'></div>");
+        $moreInfo.append($circle1,$circle2);
+
+        $circle1.css({
+            backgroundColor: "red",
+            width:"50px",
+            height:"50px"
+        })
+        $moreInfo.css({
+            borderTop:"4px solid #18cfab ",
+            backgroundColor:"#f8fcfe",
+            width: "290px",
+            height: "200px",
+        })
+    });
 });
 
 
@@ -110,15 +136,30 @@ $('.button-load-more').click(function(){
 
 /***** our amazzing work : picture hover *****/
 
-$('.our-amazing-work-images-item').mouseover(function (){
+$('.our-amazing-work-images-item').hover(function (){
+    $('.more-info-img').hide();
+    if($('.our-amazing-work-images-item').hide()){
+        $('.item-all').show()
+    }
 
     let $moreInfo = $("<div class ='more-info-img'></div>");
-    $(this).before($moreInfo);
+    $(this).after($moreInfo);
     $(this).hide();
 
+    let $circle1 = $("<div class ='circle-one'></div>");
+    let $circle2 = $("<div class ='circle-two'></div>");
+    $moreInfo.append($circle1,$circle2);
+
+    $circle1.css({
+        backgroundColor: "red",
+        width:"50px",
+        height:"50px"
+    })
     $moreInfo.css({
-        backgroundColor:"red",
+        borderTop:"4px solid #18cfab ",
+        backgroundColor:"#f8fcfe",
         width: "290px",
         height: "200px",
     })
 });
+
