@@ -2,12 +2,11 @@
     font-family: sans-serif;
     color: white;
 }
+a{
+    text-decoration: none;
+}
 .container{
     width: 1160px;
-    margin: 0 auto;
-}
-.big-content{
-    width: 1700px;
     margin: 0 auto;
 }
 .header{
@@ -122,35 +121,42 @@
     flex-wrap: wrap;
 }
 
-.square-icon-1,.square-icon-3{
+.square-1,.square-3{
     width:calc(100%/4);
     height: 300px;
     background-color:#1c2a33;
     border-top: 4px solid #18cfab;
     display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
-.square-icon-2 , .square-icon-4{
+.square-2 , .square-4{
     width:calc(100%/4);
     height: 300px;
     background-color: #18cfab;
     border-top: 4px solid white;
     display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
 }
 
-
+.square-text{
+    padding-top: 10px;
+}
+.square-text-2{
+    margin-bottom:-15px;
+}
 
 
 
 
 .section-title{
-    margin: 30px 0 30px 0;
+    padding: 40px 0 60px 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -181,38 +187,56 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+
 }
+
+
 .option-tabs-item{
     width: calc(100%/6);
     height: 50px;
     background-color: #f8fcfe;
     border-top: 1px   solid #ebecec;
     border-bottom: 1px   solid #ebecec;
-    border-right: 0.5px solid #ebecec;
-    border-left: 0.5px solid #ebecec;
-
+    border-right: 1px solid #ebecec;
+    cursor: pointer;
 }
 .tab-text{
-    color:#7a7a7a;
+    color:#959697;
+
+}
+.tab-text-first{
+    color:white;
 }
 
-.triangle-active{
+.tab-first{
+    border-left:1px solid #ebecec;
+    background-color: #18cfab;
+    border-top: 1px   solid #18cfab;
+    border-bottom: 1px   solid #18cfab;
+    border-right: 1px solid #18cfab;
+}
+.triangle{
     width:0 ;
     height: 0;
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
     border-top:15px  solid #18cfab;
     margin-left: 85px;
+    display:none;
 }
-
+.triangle-first{
+    display:block;
+}
 
 
 .options-tabs-information{
     margin-top: 30px;
+    margin-bottom: 100px;
 }
 .options-tabs-information-item{
-    display: flex;
+    display: none;
     flex-direction: row;
+
 }
 .information-img{
     width: 194px;
@@ -224,17 +248,19 @@
     line-height: 1.5;
     text-align: justify;
 }
-
+.information-first{
+    display:flex;
+}
 
 
 .section-install-now{
     background-image: url("../img/section-2.jpg");
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .install-now{
     padding: 70px 0 120px 0;
-    background: rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -247,7 +273,97 @@
 }
 .install-now-button{
     margin-top:50px ;
+    background-color: #18cfab;
+    width: 140px;
+    height: 50px;
+    border-top: 4px solid whitesmoke;
+    border-right: 0 solid;
+    border-left: 0 solid;
+    border-bottom: 0 solid;
+
+    border-radius: 6%;
+    text-transform: uppercase;
 }
+
+
+
+
+.our-amazing-work{
+    background:#f8fcfe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-amazing-work-tabs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.our-amazing-work-tabs-item{
+    padding: 0 20px 0 20px;
+    border:0.04em solid #ebebeb;
+    background: white;
+}
+
+.our-amazing-work-tabs-item{
+    border-left:0.02em solid #ebebeb;
+}
+.tab-all{
+    border-top: 2px solid #18cfab;
+    border-left: 0.04em solid #ebebeb;
+}
+.gallery-tab-text{
+    color: #717171;
+}
+.gallery-tab-text-all{
+    color: #18cfab;
+}
+
+.our-amazing-images{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f8fcfe;
+}
+.our-amazing-work-images-column{
+    flex: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.column-second,.column-fourth{
+
+}
+.column-first{
+    display: flex;
+    flex-direction: column;
+}
+.our-amazing-work-images-item{
+    width: 290px;
+    height: 200px;
+}
+
+
+.button-load-more{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;center;
+    background: #18cfab;
+    padding: 0 20px 0 20px;
+    border-radius: 5%;
+}
+.button-load-more-text{
+    margin: 26px 0 0 10px;
+}
+
+
+
+
+
 
 
 
