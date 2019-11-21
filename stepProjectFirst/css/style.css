@@ -53,8 +53,7 @@ a{
     margin-left:10px;
     border-bottom: 2px solid transparent;
 }
-.fas{
-   /* position: absolute;*/
+#first-search{
     padding-top: 3px;
     margin-left: 10px;
     color: #b8b8b8;
@@ -360,6 +359,9 @@ a{
     margin: 26px 0 0 10px;
 }
 
+.our-amazing-work-images-item:hover{
+
+}
 
 
 
