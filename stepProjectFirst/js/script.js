@@ -3,6 +3,11 @@ $('.tab-active').css({
     backgroundColor:"#18cfab"
 });
 
+
+
+
+
+
 let tabBackGraund = function () {
     $('.option-tabs-item').css({
         backgroundColor:" #f8fcfe",
@@ -179,3 +184,6 @@ slickSmallerItems.forEach(element=>{
    })
 
 });
+
+
+/***** picture date******/
