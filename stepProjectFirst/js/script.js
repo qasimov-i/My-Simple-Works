@@ -165,20 +165,28 @@ $('.slick-bigger').slick({
     asNavFor: '.slick-smaller'
 });
 $('.slick-smaller').slick({
+
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slick-bigger',
 });
 
-const slickSmallerItems= document.querySelectorAll("slick-smaller-item");
+        const slickPrevBtn = document.querySelector(".slick-prev");
+        const slickNextBtn = document.querySelector(".slick-next");
+        const slickDragg = document.querySelector(".slick-smaller.container.slick-initialized.slick-slider");
+        function handler(event){
+            document.querySelectorAll(".slick-smaller-item").forEach(item=>{
+                item.style.transform = "translateY(8px)";
+                item.style.border = "none";
+            });
+            const slickActiveImg = document.querySelector(".slick-smaller-item.slick-current.slick-active");
+            slickActiveImg.style.transform = "translateY(8px)";
+            slickActiveImg.style.transition = "transform 0.5s ease-in";
+            slickActiveImg.style.border = "2px solid #2acbac";
+        }
+        slickPrevBtn.addEventListener("click", handler);
+        slickNextBtn.addEventListener("click", handler);
 
-slickSmallerItems.forEach(element=>{
-   element.addEventListener("click",function(event){
-      slickSmallerItems.style.cssText="transform: translateY(20px)";
-
-   })
-
-});
 
 
 

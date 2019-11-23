@@ -539,6 +539,7 @@ a{
     justify-content: space-between;
     width: 83px !important;
     height: 83px !important;
+    margin: 10px 0 10px 0;
     box-shadow: 0 0 9px 3px teal;
 
 }
