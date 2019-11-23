@@ -181,6 +181,8 @@ slickSmallerItems.forEach(element=>{
 });
 
 
+
+
 /***** picture date******/
 let date = new Date();
 
