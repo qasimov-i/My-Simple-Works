@@ -1,4 +1,150 @@
-//
+
+/*********load more button***************/
+let count =0;
+$('.button-load-more').click(function(){
+
+    let $img1 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    let $img2 = $('<div class="item-images item-all">\n' +
+    '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+    '                <div class ="more-info-img">\n' +
+    '                    <div class ="circles">\n' +
+    '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+    '                        <i  class="fas fa-search circle-second"></i>\n' +
+    '                    </div>\n' +
+    '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+    '                    <p class="text-info">Web Design</p>\n' +
+    '                </div>\n' +
+    '            </div>');
+    let $img3 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    let $img4 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    let $img5 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    let $img6 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    let $img7 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    let $img8 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    let $img9 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    let $img10 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    let $img11 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    let $img12 = $('<div class="item-images item-all">\n' +
+        '                <img src="img/web-design6.jpg" alt="" class="our-amazing-work-images-item ">\n' +
+        '                <div class ="more-info-img">\n' +
+        '                    <div class ="circles">\n' +
+        '                        <img src="img/Forma%201@1X%20(5).png" class="circle-first">\n' +
+        '                        <i  class="fas fa-search circle-second"></i>\n' +
+        '                    </div>\n' +
+        '                    <h3 class="green-text text-info-first">creative design</h3>\n' +
+        '                    <p class="text-info">Web Design</p>\n' +
+        '                </div>\n' +
+        '            </div>');
+    $('.column-first').append($img1,$img2,$img3);
+    $('.column-second').append($img4,$img5,$img6);
+    $('.column-third').append($img7,$img8,$img9);
+    $('.column-fourth').append($img10,$img11,$img12);
+    $('.button-load-more').hide();
+    count++;
+});
+
+
+/********change images********/
 $('.item-images').hide();
 $('.item-all').show();
 
@@ -21,9 +167,15 @@ $('.item-all').show();
         color:" #18cfab"
     })
     $('.item-images').hide();
-    $('.item-all').show();
+     $('.item-all').css({
+         display:"flex"
+     }).show();
+     if(count!==1){
+        $('.button-load-more').show();
+    }
+count=0;
 
-});
+ });
 $('.tab-graphic').click(function(){
     $hideTopBorder();
     $('.tab-graphic').css({
@@ -33,7 +185,9 @@ $('.tab-graphic').click(function(){
         color:" #18cfab"
     })
     $('.item-images').hide();
-    $('.item-graphic').show();
+    $('.item-graphic').css({
+        display:"flex"
+    }).show();
     $('.button-load-more').hide();
 
 });
@@ -47,29 +201,37 @@ $('.tab-press').click(function (event){
         color:" #18cfab"
     });
     $('.item-images').hide();
-    $('.item-press').show();
+    $('.item-press').css({
+        display:"flex"
+    }).show();
     $('.button-load-more').hide();
 });
-
-/*********load more button***************/
-
-$('.button-load-more').click(function(){
-    let $img1 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img2 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img3 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img4 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img5 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img6 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img7 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img8 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img9 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img10 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img11 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    let $img12 = $('<img src="img/Layer%207@1X.png" class=our-amazing-work-images-item>');
-    $('.column-first').append($img1,$img2,$img3);
-    $('.column-second').append($img4,$img5,$img6);
-    $('.column-third').append($img7,$img8,$img9);
-    $('.column-fourth').append($img10,$img11,$img12);
+$('.tab-veb').click(function (event){
+    $hideTopBorder();
+    $('.tab-veb').css({
+        borderTop:"2px solid  #18cfab",
+    })
+    $('.gallery-tab-text-veb').css({
+        color:" #18cfab"
+    });
+    $('.item-images').hide();
+    $('.item-veb').css({
+        display:"flex"
+    }).show();
+    $('.button-load-more').hide();
+});
+$('.tab-landing').click(function (event){
+    $hideTopBorder();
+    $('.tab-landing').css({
+        borderTop:"2px solid  #18cfab",
+    })
+    $('.gallery-tab-text-landing').css({
+        color:" #18cfab"
+    });
+    $('.item-images').hide();
+    $('.item-landing').css({
+        display:"flex"
+    }).show();
     $('.button-load-more').hide();
 });
 
