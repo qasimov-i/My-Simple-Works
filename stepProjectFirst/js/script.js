@@ -173,21 +173,24 @@ $('.slick-smaller').slick({
 
         const slickPrevBtn = document.querySelector(".slick-prev");
         const slickNextBtn = document.querySelector(".slick-next");
-        const slickDragg = document.querySelector(".slick-smaller.container.slick-initialized.slick-slider");
+        const slickSwap = document.querySelector(".slick-smaller.container.slick-initialized.slick-slider");
         function handler(event){
-            document.querySelectorAll(".slick-smaller-item").forEach(item=>{
-                item.style.transform = "translateY(8px)";
-                item.style.border = "none";
-            });
-            const slickActiveImg = document.querySelector(".slick-smaller-item.slick-current.slick-active");
-            slickActiveImg.style.transform = "translateY(8px)";
-            slickActiveImg.style.transition = "transform 0.5s ease-in";
-            slickActiveImg.style.border = "2px solid #2acbac";
+            $('.slick-smaller-item').css({
+                border:"0",
+                transform:"translateY(0)"
+
+            })
+            $('.slick-current .slick-smaller-item').css({
+                border :"2px solid #18cfab",
+                transform:"translateY(-10px)"
+
+            })
+
         }
+
         slickPrevBtn.addEventListener("click", handler);
         slickNextBtn.addEventListener("click", handler);
-
-
+        slickSwap.addEventListener("mouseover", handler);
 
 
 
