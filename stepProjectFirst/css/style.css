@@ -346,6 +346,66 @@ a{
     height: 200px;
 }
 
+.item-images{
+    display: none;
+}
+.item-all{
+    display: block;
+}
+.item-all:hover .more-info-img,.item-graphic:hover .more-info-img,.item-veb:hover .more-info-img{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width: 290px;
+    height: 200px;
+    border-top : 4px solid #18cfab;
+}
+
+.item-all:hover .our-amazing-work-images-item, .item-press:hover .our-amazing-work-images-item,.item-graphic:hover .our-amazing-work-images-item{
+    display:none;
+}
+
+
+
+
+
+.more-info-img{
+    display:none;
+}
+.circles{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding-bottom: 20px;
+}
+.circle-first{
+    padding:10px;
+    border-radius:50%;
+    border: 1px solid #18cfab;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+.text-info{
+    padding-top: 7px;
+    color :  #a0a1a1;
+}
+.text-info-first{
+    margin-bottom: -10px;
+}
+.circle-second{
+    margin-left: 5px;
+    padding:10px 10px  7px 10px;
+
+    border-radius:50%;
+    background-color: #18cfab;
+    width: 20px;
+    height: 20px;
+}
 
 .button-load-more{
     margin-top: 60px;
