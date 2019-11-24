@@ -1,20 +1,20 @@
-
+let count=1;
+let count2=1;
     let text = document.querySelector('#pfirst');
     let iconAppear = document.getElementById("ipfirst");
     iconAppear.addEventListener("click", textAppear, true);
 
     function textAppear() {
-        text.type = "text";
-        iconAppear.className = iconAppear.className.replace(/\bfas fa-eye-slash icon-password\b/g, "fas fa-eye icon-password");
-        if (text.type === "text") {
-            let iconDisAppear = document.getElementById("ipfirst");
-            iconDisAppear.addEventListener("click", textDisAppear, true);
-
-            function textDisAppear() {
-                let text = document.querySelector('#pfirst');
-                iconAppear.className = iconAppear.className.replace(/\bfas fa-eye icon-password\b/g, "fas fa-eye-slash icon-password");
-                text.type = "password";
-            }
+        if(count===0) {
+            iconAppear.className = "fas fa-eye-slash icon-password";
+            let text = document.querySelector('#pfirst');
+            text.type = "password";
+            count=1;
+        } else if(count==1){
+            iconAppear.className = "fas fa-eye icon-password";
+            let text = document.querySelector('#pfirst');
+            text.type = "text";
+            count=0;
         }
     }
 
@@ -23,17 +23,16 @@
     iconAppearSecond.addEventListener("click", textAppearSecond, true);
 
     function textAppearSecond() {
-        textSecond.type = "text";
-        iconAppearSecond.className = iconAppear.className.replace(/\bfas fa-eye-slash icon-password\b/g, "fas fa-eye icon-password");
-        if (textSecond.type === "text") {
-            let iconDisAppear = document.getElementById("ipsecond");
-            iconDisAppear.addEventListener("click", textDisAppear, true);
-
-            function textDisAppear() {
-                let text = document.querySelector('#psecond');
-                iconAppearSecond.className = iconAppear.className.replace(/\bfas fa-eye icon-password\b/g, "fas fa-eye-slash icon-password");
-                textSecond.type = "password";
-            }
+        if(count2===0) {
+            iconAppearSecond.className = "fas fa-eye-slash icon-password";
+            let text = document.querySelector('#psecond');
+            text.type = "password";
+            count2=1;
+        } else if(count2==1){
+            iconAppearSecond.className = "fas fa-eye icon-password";
+            let text = document.querySelector('#psecond');
+            text.type = "text";
+            count2=0;
         }
 
     }
