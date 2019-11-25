@@ -1,68 +1,72 @@
-let a=  document.querySelector(".tabs-content-first");
-let b=  document.querySelector(".tabs-content-second");
-let c=  document.querySelector(".tabs-content-third");
-let d=  document.querySelector(".tabs-content-fourth");
-let e=  document.querySelector(".tabs-content-fifth");
 
-let ul=document.querySelector(".tabs-content");
-function firstTab(){
-    b.remove();
-    c.remove();
-    d.remove();
-    e.remove();
-    if(a){
-        ul.append(a);
+const mailStorage = [
+    {
+
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    },
+    {
+
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    },
+    {
+
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    },
+    {
+        text:"lorem"
+    },
+    {
+        text:"klejhkjergjregjh"
     }
+];
 
+
+const mailContainer = document.createElement('div');
+mailContainer.classList.add('mail-container');
+
+function showText(target) {
+    const allChildElems = [...target.children];
+    const textToShow = allChildElems.find(item => {
+        return item.classList.contains('mail-item-text');
+    });
+    const allTextOnPage = mailContainer.querySelectorAll
+    ('.mail-item-text');
+
+    allTextOnPage.forEach(text => {
+        if(text === textToShow) {
+            textToShow.hidden = !textToShow.hidden;
+        } else {
+            text.hidden = true
+        }
+    })
 }
-function secondTab(){
-    a.remove();
-    c.remove();
-    d.remove();
-    e.remove();
-    if(b){
-        ul.append(b);
+
+document.querySelector('.first').addEventListener('click', (event) => {
+    if (event.target.classList.contains('mail-item')) {
+        showText(event.target);
     }
-}
-function thirdTab(){
-    b.remove();
-    a.remove();
-    d.remove();
-    e.remove();
-    if(c){
-        ul.append(c);
+     else {
+        showText(event.target.parentElement);
     }
-}
-function fourthTab(){
-    b.remove();
-    c.remove();
-    a.remove();
-    e.remove();
-    if(d){
-        ul.append(d);
-    }
-}
-function fifthTab(){
-    b.remove();
-    c.remove();
-    d.remove();
-    a.remove();
-    if(e){
-        ul.append(e);
-    }
-}
-let active=document.querySelector(".active");
-active.addEventListener("click",firstTab, true);
+});
+
+document.querySelector('script').before(mailContainer);
+
+mailStorage.forEach((mailItem) => {
+    const letterContanier = document.createElement("div");
+    letterContanier.style.backgroundColor="red";
+    const letterText = document.createElement("p");
+
+    letterContanier.classList.add('mail-item');
+
+    letterText.classList.add('mail-item-text');
 
 
-let second=document.querySelector(".second");
-second.addEventListener("click",secondTab, true);
+    letterText.innerText = mailItem.text;
+    letterText.hidden = true;
 
 
-let third=document.querySelector(".third");
-third.addEventListener("click",thirdTab, true);
-let fourth=document.querySelector(".fourth");
-fourth.addEventListener("click",fourthTab, true);
 
-let fifth=document.querySelector(".fifth");
-fifth.addEventListener("click",fifthTab, true);
+    letterContanier.append(  letterText);
+    mailContainer.append(letterContanier);
+});

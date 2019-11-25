@@ -48,6 +48,8 @@ let count2=1;
         }
         else{
             alert("You are welcome");
+            hiddenError();
+
         }
 
     }
