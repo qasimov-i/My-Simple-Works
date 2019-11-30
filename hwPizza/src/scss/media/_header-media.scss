@@ -1,15 +1,115 @@
-@media screen and (min-width: 320px) and (max-width: 640px){
+@media screen and (min-width: 320px) and (max-width: 639px){
   html {
     font-size: 10px;
+    .header__nav-bar {
+      &__900 {
+        display: none;
+      }
+
+      &--logo {
+        display: none;
+      }
+    }
   }
+
 }
-@media screen and (min-width: 640px) and (max-width: 980px){
+@media screen and (min-width: 640px) and (max-width: 889px){
   html {
     font-size: 20px;
+    .header__nav-bar {
+      &__900 {
+        display: none;
+      }
+
+      &--logo {
+        display: none;
+      }
+    }
+
   }
+
 }
-@media screen and (min-width: 1200px){
-  .container {
-    width: 1280px;
+@media screen and (min-width: 900px) and (max-width: 1200px){
+  html{
+    font-size: 27px;
+  }
+  .content
+  {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
+    &__delivery {
+      width: 33%;
+      &__itemText{
+        height: 14rem;
+        width: 14rem;
+        &--text{
+          font-size: 0.9rem;
+        }
+      }
+      &__itemLink {
+        display: none;
+      }
+    }
+    &__salad {
+      width: 33%;
+      &__itemText{
+        height: 14rem;
+        width: 14rem;
+        &--text{
+          font-size: 0.9rem;
+        }
+      }
+      &__itemLink {
+        display: none;
+      }
+    }
+    &__dessert {
+      width: 33%;
+      &__itemText{
+        height: 14rem;
+        width: 14rem;
+        &--text{
+          font-size: 0.9rem;
+        }
+
+      }
+      &__itemLink {
+        display: none;
+      }
+    }
+  }
+  .header {
+    &__nav-bar {
+      background-color: #373c3f;
+      height: 3.7rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      font-family: sans-serif;
+      &__title {
+        display: none;
+      }
+      &__menu {
+        display: none;
+      }
+
+      &__900{
+
+        &--item{
+          font-size: 0.55rem;
+          text-decoration: none;
+          color: #dfdfe0;
+          margin-left: 1rem;
+        }
+      }
+      &--logo{
+        position: absolute;
+        right: 1rem;
+        top:0.3rem;
+      }
+    }
   }
 }

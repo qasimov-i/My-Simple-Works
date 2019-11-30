@@ -27,9 +27,6 @@ function createMenuList(){
 createMenuList();
 $('.header__slogan__dropDownMenu').hide();
 
-
-
-
 const $burger = $(".header__nav-bar__menu");
 const ANIMATION_DURATION = 1000;
 

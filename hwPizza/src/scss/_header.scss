@@ -1,12 +1,12 @@
 
 .header{
-  width: 32rem;
   &__nav-bar{
     background-color: #373c3f;
     height: 3.7rem;
     display: flex;
     flex-direction: row;
     position: relative;
+
     &__title{
       &--text{
         padding: 1.2rem 1.2rem 1.2rem 1.83rem;
@@ -38,7 +38,8 @@
     position: relative;
     height: 17.3rem;
     font-family: 'Lato' ,bold;
-    background: url("../img/header-fon copy 3@1X (1).png");
+    background: url("../img/header-fon copy 3@1X (1).png") no-repeat;
+   background-size: cover;
     &--text-first{
       font-size: 1.61rem;
 
@@ -61,9 +62,7 @@
     }
     &__dropDownMenu {
       background-color: white;
-      &__list:hover{
-        background-color: #f5f5f5;
-      }
+
       &__list {
         width: 18.2rem;
         height: 3.1rem;
@@ -94,6 +93,9 @@
           }
         }
 
+      }
+      &__list:hover{
+        background-color: #f5f5f5;
       }
     }
   }
