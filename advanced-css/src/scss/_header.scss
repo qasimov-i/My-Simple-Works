@@ -1,0 +1,22 @@
+.header{
+    width: 32rem;
+    &__nav-bar{
+        background-color: #373c3f;
+        height: 3.7rem;
+        display: flex;
+        flex-direction: row;
+        &__title{
+              &--text{
+                color: white;
+                padding: 1rem 1rem 1rem 1rem;
+              }
+        }
+        &__menu{
+          height:3.7rem;
+          width: 4.1rem;
+          background-color: #202529;
+
+        }
+    }
+
+}

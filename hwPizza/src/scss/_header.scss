@@ -1,0 +1,103 @@
+
+.header{
+  width: 32rem;
+  &__nav-bar{
+    background-color: #373c3f;
+    height: 3.7rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    &__title{
+      &--text{
+        padding: 1.2rem 1.2rem 1.2rem 1.83rem;
+        font-family: Montserrat,sans-serif;
+        font-size: 1.21rem;
+        color: #fff;
+      }
+    }
+    &__menu{
+        height:3.7rem;
+        width: 4.1rem;
+        background-color: #202529;
+        position:absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &--line{
+          width:1.5rem ;
+          border-top:0.2rem solid white;
+          margin-bottom: 0.2rem;
+        }
+    }
+  }
+
+  &__slogan{
+    position: relative;
+    height: 17.3rem;
+    font-family: 'Lato' ,bold;
+    background: url("../img/header-fon copy 3@1X (1).png");
+    &--text-first{
+      font-size: 1.61rem;
+
+      color: #ffffff;
+      padding: 1.7rem 0rem 0rem 2rem;
+    }
+    &--text-second {
+      font-size: 1.53rem;
+      color: #ffffff;
+      padding: 0.72rem 0rem 1.2rem 2.15rem;
+
+    }
+    &__link{
+      color: #a6d6e0;
+      text-decoration: none;
+      font-size: 1.41rem;
+      &--text{
+        margin: -0.25rem 1.2rem 0rem 1.95rem;
+      }
+    }
+    &__dropDownMenu {
+      background-color: white;
+      &__list:hover{
+        background-color: #f5f5f5;
+      }
+      &__list {
+        width: 18.2rem;
+        height: 3.1rem;
+        background-color: #fafafa;
+        border-bottom: 0.05rem solid #e1e1e1;
+        &--link1{
+          padding: 1.16rem 0 0 1.14rem;
+        }
+        &--link2{
+          padding: 1.23rem 0 0 1.14rem;
+        }
+        &--link3{
+          padding: 1.14rem 0 0 1.15rem;
+        }
+        &--link4{
+          padding: 1.02rem 0 0 1.14rem;
+        }
+        &--link5{
+          padding: 1rem 0 0 1.14rem;
+        }
+        &--link {
+
+          &--a{
+            text-decoration: none;
+            color: #444444;
+            font-size: 1.21rem;
+            font-family: Lato, sans-serif;
+          }
+        }
+
+      }
+    }
+  }
+
+
+}
+

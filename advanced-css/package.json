@@ -1,0 +1,33 @@
+{
+  "name": "fe2_first-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/yamnyk.vlog/fe2_first-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/yamnyk.vlog/fe2_first-project/issues"
+  },
+  "homepage": "https://gitlab.com/yamnyk.vlog/fe2_first-project#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2",
+    "img-loader": "^3.0.1",
+    "node-sass": "^4.13.0"
+  },
+  "browserslist": [
+    "> 0.01%",
+    "last 100 versions"
+  ]
+}
