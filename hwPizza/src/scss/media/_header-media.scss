@@ -33,53 +33,7 @@
   html{
     font-size: 27px;
   }
-  .content
-  {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 7rem;
-    &__delivery {
-      width: 33%;
-      &__itemText{
-        height: 14rem;
-        width: 14rem;
-        &--text{
-          font-size: 0.9rem;
-        }
-      }
-      &__itemLink {
-        display: none;
-      }
-    }
-    &__salad {
-      width: 33%;
-      &__itemText{
-        height: 14rem;
-        width: 14rem;
-        &--text{
-          font-size: 0.9rem;
-        }
-      }
-      &__itemLink {
-        display: none;
-      }
-    }
-    &__dessert {
-      width: 33%;
-      &__itemText{
-        height: 14rem;
-        width: 14rem;
-        &--text{
-          font-size: 0.9rem;
-        }
 
-      }
-      &__itemLink {
-        display: none;
-      }
-    }
-  }
   .header {
     &__nav-bar {
       background-color: #373c3f;

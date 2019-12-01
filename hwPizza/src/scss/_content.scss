@@ -25,6 +25,7 @@
         font-size: 2rem;
         margin-left: 0.43rem;
         font-family: 'Lato', bold;
+        text-decoration: none;
 
       }
 
@@ -70,6 +71,8 @@
         color: #fff;
         font-size: 2rem;
         margin-left: 2.43rem;
+        text-decoration: none;
+
       }
 
     }
@@ -115,6 +118,8 @@
         margin-bottom: 0.6rem;
         font-size: 2rem;
         margin-left: -0.57rem;
+        text-decoration: none;
+
       }
 
     }
@@ -139,7 +144,10 @@
   }
 }
 
-.priceFirst{
+.slogan{
+  &--logo{
+    display:none;
+  }
   &__title{
     margin-top: 2rem;
     &--text{
@@ -155,218 +163,260 @@
       font-family:' Lato',sans-serif;
       margin-top: -0.6rem;
       padding-left: 0.9rem;
-    }
-  }
-  &__tincidunt{
-    height: 3.7rem;
-    background-color: #3f4043;
-    margin-top: 1rem;
-    &--text{
-      color: #acd8ad;
-      text-transform: uppercase;
-      font-family:' Lato',sans-serif;
-      font-size: 1.99888rem;
-      padding: 1.01rem 0rem 0rem 1.8999rem;
-    }
-    
-  }
-  &__select{
-    display:flex;
-    flex-direction: row;
-    &--text{
-      text-transform: uppercase;
-      color: #3f4043;
-      font-family:' Lato',sans-serif;
-      font-size: 1.459rem;
-      padding: 1.72rem 0 0 1.71rem;
-
-    }
-    &--logo{
-      width: 2.5rem;
-      height: 2.5rem;
-      margin: 0.97rem 0 0 7.43rem;;
-    }
-  }
-
-  &__list{
-    margin-top: 1.6rem;
-    color: #3f4043;
-    font-family: Lato, bold;
-    &__txtPrc{
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      &--text{
-        font-size: 1.32rem;
-        padding: 0.09rem 0 0 1.64rem;
-      }
-      &--price{
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 1.3rem;
-        padding: 0.1rem 1.859rem 0 0;
-
-      }
-    }
-    &--text{
-      font-size: .90555rem;
-      padding:0.74rem 0 0 1.75rem;
-
-    }
-  }
-  &__list2{
-    margin-top: 1.1rem;
-  }
-  &__list3{
-    margin-top: 1.1rem;
-  }
-  &__list4{
-    margin-top: 1.1rem;
-  }
-  &__select2{
-    display:flex;
-    flex-direction: row;
-    margin-top: 0.9rem;
-    &--text{
-      text-transform: uppercase;
-      color: #3f4043;
-      font-family:' Lato',sans-serif;
-      font-size: 1.455rem;
-      padding: 1.6rem 0 0 1.79rem;
-
-    }
-    &--logo{
-      width: 1.3rem;
-      height: 2.4rem;
-      margin: 1.01rem 0 0 7.5rem;
     }
   }
 }
+.price {
+  &__priceFirst {
 
+    &__tincidunt {
+      height: 3.7rem;
+      background-color: #3f4043;
+      margin-top: 1rem;
 
-.priceSecond{
-  width: 32rem;
-  margin-top: 3.1rem;
-  &__title{
-    margin-top: 2rem;
-    &--text{
-      text-transform: uppercase;
+      &--text {
+        color: #acd8ad;
+        text-transform: uppercase;
+        font-family: ' Lato', sans-serif;
+        font-size: 1.99888rem;
+        padding: 1.01rem 0 0 1.8999rem;
+      }
+
+    }
+
+    &__select {
+      display: flex;
+      flex-direction: row;
+
+      &--text {
+        text-transform: uppercase;
+        color: #3f4043;
+        font-family: ' Lato', sans-serif;
+        font-size: 1.459rem;
+        padding: 1.72rem 0 0 1.71rem;
+
+      }
+
+      &--logo {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 0.97rem 0 0 7.43rem;;
+      }
+    }
+
+    &__list {
+      margin-top: 1.6rem;
       color: #3f4043;
-      font-size: 1.988rem;
-      padding: 0.2rem 1rem 1rem 0.7rem;
-      font-family: 'Lato',sans-serif;
+      font-family: Lato, bold;
+
+      &__txtPrc {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        &--text {
+          font-size: 1.32rem;
+          padding: 0.09rem 0 0 1.64rem;
+        }
+
+        &--price {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 1.3rem;
+          padding: 0.1rem 1.859rem 0 0;
+
+        }
+      }
+
+      &--text {
+        font-size: .90555rem;
+        padding: 0.74rem 0 0 1.75rem;
+
+      }
     }
-    &--subtitle{
-      color: #d5d6d8;
-      font-size: 0.97rem;
-      font-family:' Lato',sans-serif;
-      margin-top: -0.6rem;
-      padding-left: 0.9rem;
+
+    &__list2 {
+      margin-top: 1.1rem;
+    }
+
+    &__list3 {
+      margin-top: 1.1rem;
+    }
+
+    &__list4 {
+      margin-top: 1.1rem;
+    }
+
+    &__select2 {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0.9rem;
+
+      &--text {
+        text-transform: uppercase;
+        color: #3f4043;
+        font-family: ' Lato', sans-serif;
+        font-size: 1.455rem;
+        padding: 1.6rem 0 0 1.79rem;
+
+      }
+
+      &--logo {
+        width: 1.3rem;
+        height: 2.4rem;
+        margin: 1.01rem 0 0 7.5rem;
+      }
     }
   }
-  &__vestibulum{
-    height: 3.7rem;
-    background-color: #acd8ad;
-    margin-top: 1rem;
-    &--text{
-      color: white;
-      text-transform: uppercase;
-      font-family:' Lato',sans-serif;
-      font-size: 1.86rem;
-      padding: 1.01rem 0 0 2rem;
+
+
+  &__priceSecond {
+    margin-top: 3.1rem;
+
+    &__title {
+      margin-top: 2rem;
+
+      &--text {
+        text-transform: uppercase;
+        color: #3f4043;
+        font-size: 1.988rem;
+        padding: 0.2rem 1rem 1rem 0.7rem;
+        font-family: 'Lato', sans-serif;
+      }
+
+      &--subtitle {
+        color: #d5d6d8;
+        font-size: 0.97rem;
+        font-family: ' Lato', sans-serif;
+        margin-top: -0.6rem;
+        padding-left: 0.9rem;
+      }
     }
-  }
-  &__select{
-    display:flex;
-    flex-direction: row;
-    &--text{
-      text-transform: uppercase;
+
+    &__vestibulum {
+      height: 3.7rem;
+      background-color: #acd8ad;
+      margin-top: 1rem;
+
+      &--text {
+        color: white;
+        text-transform: uppercase;
+        font-family: ' Lato', sans-serif;
+        font-size: 1.86rem;
+        padding: 1.01rem 0 0 2rem;
+      }
+    }
+
+    &__select {
+      display: flex;
+      flex-direction: row;
+
+      &--text {
+        text-transform: uppercase;
+        color: #3f4043;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.49rem;
+        padding: 1.8rem 0 0 1.76rem;
+
+      }
+
+      &--logo {
+        width: 3rem;
+        height: 2.1rem;
+        margin: 1.3rem 0 0 8.3rem;
+      }
+    }
+
+    &__list {
+      margin-top: 1.89rem;
       color: #3f4043;
       font-family: 'Lato', sans-serif;
-      font-size: 1.49rem;
-      padding: 1.8rem 0 0 1.76rem;
 
-    }
-    &--logo{
-      width: 3rem;
-      height: 2.1rem;
-      margin: 1.3rem 0 0 8.3rem;
-    }
-  }
+      &__txtPrc {
+        display: flex;
+        flex-direction: row;
+        position: relative;
 
-  &__list{
-    margin-top: 1.89rem;
-    color: #3f4043;
-    font-family: 'Lato', sans-serif;
-    &__txtPrc{
+        &--text {
+          font-size: 1.3rem;
+          padding: 0 0 0 1.64rem;
+
+        }
+
+        &--price {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 1.3rem;
+          padding: 0.1rem 1.88rem 0 0;
+
+        }
+      }
+
+      &--text {
+        font-size: 0.915rem;
+        padding: 0.7rem 0 0 1.63rem;
+
+      }
+    }
+
+    &__list2 {
+      margin-top: 1.2rem;
+    }
+
+    &__list3 {
+      margin-top: 1.3rem;
+    }
+
+    &__list4 {
+      margin-top: 1.17rem;
+    }
+
+    &__select2 {
       display: flex;
       flex-direction: row;
-      position: relative;
-      &--text{
-        font-size: 1.3rem;
-        padding: 0 0 0 1.64rem;
+      margin-top: 0.9rem;
+
+      &--text {
+        text-transform: uppercase;
+        color: #3f4043;
+        font-family: ' Lato', sans-serif;
+        font-size: 1.444rem;
+        padding: 1.5rem 0 0 1.7rem;
 
       }
-      &--price{
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 1.3rem;
-        padding: 0.1rem 1.88rem 0 0;
 
+      &--logo {
+        width: 2.1rem;
+        height: 2rem;
+        margin: 1.1rem 0 0 5.8rem;
       }
-    }
-    &--text{
-      font-size: 0.915rem;
-      padding: 0.7rem 0 0 1.63rem;
-
-    }
-  }
-  &__list2{
-    margin-top: 1.2rem;
-  }
-  &__list3{
-    margin-top: 1.3rem;
-  }
-  &__list4{
-    margin-top: 1.17rem;
-  }
-  &__select2{
-    display:flex;
-    flex-direction: row;
-    margin-top: 0.9rem;
-    &--text{
-      text-transform: uppercase;
-      color: #3f4043;
-      font-family:' Lato',sans-serif;
-      font-size: 1.444rem;
-      padding: 1.5rem 0 0 1.7rem;
-
-    }
-    &--logo{
-      width: 2.1rem;
-      height: 2rem;
-      margin:1.1rem 0 0 5.8rem;
     }
   }
 }
+  .footer {
+    margin-top: 5rem;
+    height: 5.5rem;
+    background-color: #acd8ad;
+    color: white;
+    margin-bottom: 5rem;
+    &--logo{
+      display: none;
+    }
+    &--text1 {
+      padding: 1.3rem 0 0 8.67rem;
+      font-size: 1.265rem;
+      font-family: 'Lato', sans-serif;
+    }
 
-.footer{
-  margin-top: 5rem;
-  height: 5.5rem;
-  background-color: #acd8ad;
-  color: white;
-  margin-bottom: 5rem;
-  &--text1{
-    padding: 1.3rem 0 0 8.67rem;
-    font-size: 1.265rem;
-    font-family: 'Lato',sans-serif;
-  }
-  &--text2{
-    padding: 0.6rem 0 0 4rem;
-    font-size: 1.33rem;
-    font-family: 'Lato',sans-serif;
+    &--text2 {
+      padding: 0.6rem 0 0 4rem;
+      font-size: 1.33rem;
+      font-family: 'Lato', sans-serif;
 
+    }
   }
+a{
+  text-decoration: none;
 }
