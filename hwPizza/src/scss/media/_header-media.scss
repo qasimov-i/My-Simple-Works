@@ -67,3 +67,42 @@
     }
   }
 }
+
+@media screen and  (min-width: 1200px){
+  html{
+    font-size: 30px;
+  }
+
+  .header {
+    &__nav-bar {
+      background-color: #373c3f;
+      height: 3.7rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      font-family: sans-serif;
+      &__title {
+        display: none;
+      }
+      &__menu {
+        display: none;
+      }
+
+      &__900{
+
+        &--item{
+          font-size: 0.55rem;
+          text-decoration: none;
+          color: #dfdfe0;
+          margin-left: 1rem;
+        }
+      }
+      &--logo{
+        position: absolute;
+        right: 1rem;
+        top:0.3rem;
+      }
+    }
+  }
+}
