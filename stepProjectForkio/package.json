@@ -17,7 +17,8 @@
   "homepage": "https://gitlab.com/Qasimov/tasks-homeworks#readme",
   "dependencies": {
     "gulp": "^4.0.2",
-    "gulpfile": "^1.0.2"
+    "gulpfile": "^1.0.2",
+    "sass": "^1.23.7"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
